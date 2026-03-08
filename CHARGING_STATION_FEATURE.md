@@ -61,43 +61,43 @@ The BMW AutoSense Dashboard now includes a **Charging Station Finder** feature t
 
 ## Sample Charging Stations (Mock Data)
 
-The app currently includes 6 mock charging stations in Dhaka, Bangladesh:
+The app currently includes 6 mock charging stations in Munich, Germany (BMW Headquarters region):
 
-1. **BMW EV Charging Hub** - Gulshan 2
+1. **BMW Welt Charging Hub** - Am Olympiapark 1, Munich
    - 2.3 km away
-   - 3/4 chargers available
-   - Rapid charging, ৳45/kWh
-   - Rating: 4.8★
-
-2. **PowerStation Banani** - Banani
-   - 3.1 km away
-   - 2/6 chargers available
-   - Fast charging, ৳38/kWh
-   - Rating: 4.5★
-
-3. **Tesla Supercharger Bashundhara** - Bashundhara City
-   - 1.8 km away
-   - 5/8 chargers available
-   - Rapid charging, ৳50/kWh
+   - 6/8 chargers available
+   - Rapid charging, €0.45/kWh
    - Rating: 4.9★
 
-4. **EV Charge Point Uttara** - Uttara Sector 7
+2. **EnBW Hypercharger Munich** - Schwabing, Munich
+   - 3.1 km away
+   - 4/6 chargers available
+   - Rapid charging, €0.48/kWh
+   - Rating: 4.7★
+
+3. **Tesla Supercharger Munich** - Arabellastraße, Munich
+   - 1.8 km away
+   - 8/12 chargers available
+   - Rapid charging, €0.52/kWh
+   - Rating: 4.8★
+
+4. **Ionity Munich Ost** - A94 Autobahn, Munich East
    - 5.7 km away
-   - 1/3 chargers available
-   - Rapid charging, ৳42/kWh
+   - 3/6 chargers available
+   - Rapid charging, €0.69/kWh
    - Rating: 4.6★
 
-5. **Quick Charge Dhanmondi** - Dhanmondi 27
+5. **Stadtwerke München Ladepark** - Maxvorstadt, Munich
+   - 4.5 km away
+   - 2/4 chargers available
+   - Fast charging, €0.39/kWh
+   - Rating: 4.5★
+
+6. **Audi Charging Hub Ingolstadt** - Audi Forum, Ingolstadt
    - 7.2 km away
    - 0/4 chargers available
-   - Fast charging, ৳40/kWh
-   - Rating: 4.2★
-
-6. **EcoCharge Mohakhali** - Mohakhali DOHS
-   - 4.5 km away
-   - 2/3 chargers available
-   - Slow charging, ৳25/kWh
-   - Rating: 4.0★ (Currently Closed)
+   - Fast charging, €0.42/kWh
+   - Rating: 4.3★
 
 ## Technical Implementation
 

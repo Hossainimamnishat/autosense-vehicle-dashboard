@@ -27,21 +27,21 @@
 │   STATION LIST       │        GOOGLE MAPS                   │
 │ ┌──────────────────┐ │  ┌────────────────────────────────┐ │
 │ │ Tesla SC         │ │  │  📍 Your Location             │ │
-│ │ Bashundhara      │ │  │                                │ │
-│ │ 1.8 km  ⭐4.9   │ │  │    🟢 Stations                │ │
-│ │ 5/8 | Rapid      │ │  │                                │ │
+│ │ Arabellastraße   │ │  │                                │ │
+│ │ 1.8 km  ⭐4.8   │ │  │    🟢 Stations                │ │
+│ │ 8/12 | Rapid     │ │  │                                │ │
 │ └──────────────────┘ │  │         Route Line 📍➜🟢      │ │
 │ ┌──────────────────┐ │  │                                │ │
-│ │ BMW EV Hub       │ │  │                                │ │
-│ │ Gulshan 2        │◄┼──┼── SELECTED (Highlighted)       │ │
-│ │ 2.3 km  ⭐4.8   │ │  │                                │ │
-│ │ 3/4 | Rapid      │ │  │                                │ │
+│ │ BMW Welt Hub     │ │  │                                │ │
+│ │ Am Olympiapark 1 │◄┼──┼── SELECTED (Highlighted)       │ │
+│ │ 2.3 km  ⭐4.9   │ │  │                                │ │
+│ │ 6/8 | Rapid      │ │  │                                │ │
 │ └──────────────────┘ │  └────────────────────────────────┘ │
 │ ┌──────────────────┐ │  ┌────────────────────────────────┐ │
-│ │ PowerStation     │ │  │ Selected: BMW EV Hub           │ │
-│ │ Banani           │ │  │ 3 chargers available • 2.3 km  │ │
-│ │ 3.1 km  ⭐4.5   │ │  │          [🧭 Navigate]         │ │
-│ │ 2/6 | Fast       │ │  └────────────────────────────────┘ │
+│ │ EnBW Hypercharger│ │  │ Selected: BMW Welt Hub         │ │
+│ │ Schwabing        │ │  │ 6 chargers available • 2.3 km  │ │
+│ │ 3.1 km  ⭐4.7   │ │  │          [🧭 Navigate]         │ │
+│ │ 4/6 | Rapid      │ │  └────────────────────────────────┘ │
 │ └──────────────────┘ │                                      │
 │        ⋮             │                                      │
 └──────────────────────┴──────────────────────────────────────┘
@@ -52,8 +52,8 @@
 │                    GOOGLE MAPS APP                           │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │  Turn-by-turn Navigation to:                         │   │
-│  │  BMW EV Charging Hub                                 │   │
-│  │  Gulshan 2, Dhaka                                    │   │
+│  │  BMW Welt Charging Hub                               │   │
+│  │  Am Olympiapark 1, Munich                            │   │
 │  │                                                       │   │
 │  │  📍 ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🎯                │   │
 │  │                                                       │   │
@@ -92,12 +92,12 @@ Top bar shows: "← Back | Charging Stations | 6 stations nearby | ⚡"
 Left side shows scrollable list of 6 nearby stations
           ↓
 Each station card displays:
-  • Station name (e.g., "Tesla Supercharger Bashundhara")
-  • Address (e.g., "Bashundhara City, Dhaka")
-  • Distance badge (e.g., "1.8 km")
-  • Charger availability (e.g., "5/8" with green icon)
+  • Station name (e.g., "BMW Welt Charging Hub")
+  • Address (e.g., "Am Olympiapark 1, Munich")
+  • Distance badge (e.g., "2.3 km")
+  • Charger availability (e.g., "6/8" with green icon)
   • Charging speed (e.g., "Rapid" with yellow icon)
-  • Price (e.g., "৳50/kWh" with blue icon)
+  • Price (e.g., "€0.45/kWh" with blue icon)
   • Rating (e.g., "4.9⭐" with yellow star)
   • Status (e.g., "● Open Now" in green)
 ```
@@ -112,7 +112,7 @@ Right side shows Google Maps with:
 
 ### Step 5: Select a Station
 ```
-User clicks on "BMW EV Charging Hub" card
+User clicks on "BMW Welt Charging Hub" card
           ↓
 Card highlights with elevated shadow
           ↓
@@ -122,8 +122,8 @@ Map automatically:
   • Draws blue route line from current location
           ↓
 Bottom of map shows selected station details:
-  "BMW EV Charging Hub"
-  "3 chargers available • 2.3 km away"
+  "BMW Welt Charging Hub"
+  "6 chargers available • 2.3 km away"
   [🧭 Navigate] button appears
 ```
 
@@ -147,9 +147,9 @@ If not installed:
 ```
 User follows Google Maps directions
           ↓
-Arrives at BMW EV Charging Hub
+Arrives at BMW Welt Charging Hub
           ↓
-Finds 3 available chargers
+Finds 6 available chargers
           ↓
 Plugs in and charges
           ↓
@@ -163,10 +163,10 @@ Can return to dashboard by clicking Back button
 ### Station Card Components
 ```
 ┌─────────────────────────────────────────────┐
-│ Tesla Supercharger Bashundhara      [1.8 km]│ ← Name & Distance
-│ Bashundhara City, Dhaka                     │ ← Address
+│ BMW Welt Charging Hub           [2.3 km]   │ ← Name & Distance
+│ Am Olympiapark 1, Munich                    │ ← Address
 │                                             │
-│ 🚗5/8  ⚡Rapid  💰৳50/kWh  ⭐4.9          │ ← Quick Info
+│ 🚗6/8  ⚡Rapid  💰€0.45/kWh  ⭐4.9         │ ← Quick Info
 │                                             │
 │ ● Open Now                                  │ ← Status
 └─────────────────────────────────────────────┘
@@ -293,7 +293,7 @@ Charging Speed:
 
 1. **Select before navigating** - Always select a station to see route first
 2. **Check availability** - Look for green icons (chargers available)
-3. **Compare prices** - Stations range from ৳25 to ৳50 per kWh
+3. **Compare prices** - Stations range from €0.39 to €0.69 per kWh
 4. **Read ratings** - Higher rated stations = better experience
 5. **Verify hours** - Check "Open Now" status before going
 6. **Plan distance** - Consider stations within 2-3 km for efficiency
@@ -304,9 +304,9 @@ Charging Speed:
 
 ### Scenario 1: Daily Commute
 ```
-User: Regular commuter in Dhaka
+User: Regular commuter in Munich
 Need: Quick charge during work hours
-Action: Opens charging finder → Selects Gulshan Hub (closest to office)
+Action: Opens charging finder → Selects BMW Welt Hub (closest to office)
 Result: Charges during lunch break
 ```
 
@@ -314,7 +314,7 @@ Result: Charges during lunch break
 ```
 User: Battery at 15%
 Need: Immediate fast charging
-Action: Filters by "Rapid" → Chooses Tesla Supercharger (5/8 available)
+Action: Filters by "Rapid" → Chooses Tesla Supercharger (8/12 available)
 Result: Fast charge in 30 minutes
 ```
 

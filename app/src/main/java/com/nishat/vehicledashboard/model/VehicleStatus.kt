@@ -20,8 +20,8 @@ data class VehicleStatus(
     val weatherCondition: String = "Sunny",
 
     // Location
-    val latitude: Double = 23.8103, // Dhaka
-    val longitude: Double = 90.4125,
+    val latitude: Double = 48.1351, // Munich, Germany (BMW Headquarters)
+    val longitude: Double = 11.5820,
 
     // Media
     val currentSong: String = "Blinding Lights",

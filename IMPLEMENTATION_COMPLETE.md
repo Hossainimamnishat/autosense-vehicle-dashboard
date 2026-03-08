@@ -100,12 +100,12 @@ From the dashboard → Click **"Charging"** button in Quick Controls section
 
 | Station Name | Location | Distance | Chargers | Speed | Price | Rating |
 |--------------|----------|----------|----------|-------|-------|--------|
-| BMW EV Charging Hub | Gulshan 2 | 2.3 km | 3/4 | Rapid | ৳45/kWh | 4.8★ |
-| Tesla Supercharger | Bashundhara | 1.8 km | 5/8 | Rapid | ৳50/kWh | 4.9★ |
-| PowerStation Banani | Banani | 3.1 km | 2/6 | Fast | ৳38/kWh | 4.5★ |
-| EV Charge Point | Uttara | 5.7 km | 1/3 | Rapid | ৳42/kWh | 4.6★ |
-| Quick Charge | Dhanmondi | 7.2 km | 0/4 | Fast | ৳40/kWh | 4.2★ |
-| EcoCharge | Mohakhali | 4.5 km | 2/3 | Slow | ৳25/kWh | 4.0★ |
+| BMW Welt Charging Hub | Am Olympiapark 1, Munich | 2.3 km | 6/8 | Rapid | €0.45/kWh | 4.9★ |
+| Tesla Supercharger Munich | Arabellastraße, Munich | 1.8 km | 8/12 | Rapid | €0.52/kWh | 4.8★ |
+| EnBW Hypercharger Munich | Schwabing, Munich | 3.1 km | 4/6 | Rapid | €0.48/kWh | 4.7★ |
+| Ionity Munich Ost | A94 Autobahn, Munich East | 5.7 km | 3/6 | Rapid | €0.69/kWh | 4.6★ |
+| Stadtwerke München Ladepark | Maxvorstadt, Munich | 4.5 km | 2/4 | Fast | €0.39/kWh | 4.5★ |
+| Audi Charging Hub Ingolstadt | Audi Forum, Ingolstadt | 7.2 km | 0/4 | Fast | €0.42/kWh | 4.3★ |
 
 ---
 
