@@ -79,7 +79,8 @@ fun DashboardScreen(
                     modifier = Modifier.weight(1f),
                     songTitle = status.currentSong,
                     artistName = status.currentArtist,
-                    songProgress = status.songProgress
+                    songProgress = status.songProgress,
+                    viewModel = viewModel
                 )
             }
 
@@ -447,7 +448,8 @@ fun RightSection(
     modifier: Modifier = Modifier,
     songTitle: String,
     artistName: String,
-    songProgress: Float
+    songProgress: Float,
+    viewModel: VehicleViewModel
 ) {
     Column(
         modifier = modifier,
@@ -555,12 +557,12 @@ fun RightSection(
         }
 
         // Smart Controls Grid
-        SmartControlsGrid()
+        SmartControlsGrid(viewModel = viewModel)
     }
 }
 
 @Composable
-fun SmartControlsGrid() {
+fun SmartControlsGrid(viewModel: VehicleViewModel) {
     DashboardCard(
         modifier = Modifier.height(200.dp)
     ) {
@@ -583,17 +585,23 @@ fun SmartControlsGrid() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    ControlButton(Icons.Default.Thermostat, "Climate", Modifier.weight(1f))
-                    ControlButton(Icons.Default.Place, "Live Map", Modifier.weight(1f))
-                    ControlButton(Icons.Default.Star, "Light", Modifier.weight(1f))
+                    ControlButton(Icons.Default.Thermostat, "Climate", Modifier.weight(1f)) { }
+                    ControlButton(Icons.Default.Place, "Live Map", Modifier.weight(1f)) { }
+                    ControlButton(Icons.Default.Star, "Light", Modifier.weight(1f)) { }
                 }
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    ControlButton(Icons.Default.Battery6Bar, "Charging", Modifier.weight(1f))
-                    ControlButton(Icons.Default.LibraryMusic, "Music", Modifier.weight(1f))
-                    ControlButton(Icons.Default.NearMe, "Direction", Modifier.weight(1f))
+                    ControlButton(
+                        Icons.Default.Battery6Bar,
+                        "Charging",
+                        Modifier.weight(1f)
+                    ) {
+                        viewModel.navigateToChargingStationFinder()
+                    }
+                    ControlButton(Icons.Default.LibraryMusic, "Music", Modifier.weight(1f)) { }
+                    ControlButton(Icons.Default.NearMe, "Direction", Modifier.weight(1f)) { }
                 }
             }
         }
@@ -601,12 +609,17 @@ fun SmartControlsGrid() {
 }
 
 @Composable
-fun ControlButton(icon: ImageVector, label: String, modifier: Modifier = Modifier) {
+fun ControlButton(
+    icon: ImageVector,
+    label: String,
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
+) {
     Surface(
         modifier = modifier.height(60.dp),
         color = BMWCardElevated,
         shape = RoundedCornerShape(12.dp),
-        onClick = { }
+        onClick = onClick
     ) {
         Column(
             modifier = Modifier
